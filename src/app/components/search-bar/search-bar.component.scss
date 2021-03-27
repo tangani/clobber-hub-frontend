@@ -1,0 +1,18 @@
+.search__input {
+  border: black 0;
+  background-color: transparent;
+  margin: 8px;
+  font-size: 16px;
+}
+
+.search__input:focus {
+  outline: 0;
+}
+
+.search__container {
+  width: 100%;
+  text-align:right;
+  background-color:white;
+  color: black;
+  border-radius: 3px;
+}

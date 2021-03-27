@@ -1,0 +1,39 @@
+<div class="join-us">
+  <form [formGroup]="joinUsForm">
+    <div id="icon"><i class="fa fa-user fa-5x" aria-hidden="true"> </i> </div>
+    <h2>Sign in to Clobber Hub</h2>
+    <br>
+    <div class="form-group">
+      <label>Firstname</label>
+      <input placeholder="First Name" type="text"  formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': f.firstName.touched && f.firstName.errors }" />
+      <div *ngIf="f.firstName.touched && f.firstName.errors" class="invalid-feedback">
+        <div *ngIf="f.firstName.errors.required">Firstname is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input placeholder="Last Name" type="text"  formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': f.lastName.touched && f.lastName.errors }" />
+      <div *ngIf="f.lastName.touched && f.lastName.errors" class="invalid-feedback">
+        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input placeholder="Your email" type="text"  formControlName="emailAddress" class="form-control" [ngClass]="{ 'is-invalid': f.emailAddress.touched && f.emailAddress.errors }" />
+      <div *ngIf="f.emailAddress.touched && f.emailAddress.errors" class="invalid-feedback">
+        <div *ngIf="f.emailAddress.errors.required">Email Address is required</div>
+        <div *ngIf="f.emailAddress.errors.email">Email must be a valid email address</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': f.password.touched && f.password.errors }" />
+      <div *ngIf="f.password.touched && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">Password is required</div>
+        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+      </div>
+      <br>
+      <button mat-button [disabled]="joinUsForm.invalid">Sign In</button>
+    </div>
+  </form>
+</div>

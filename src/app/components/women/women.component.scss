@@ -1,0 +1,197 @@
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  font-weight: bolder
+}
+
+.women-toolbar {
+  background-color: #00000000;
+
+  width: 60vw;
+}
+women-topNav {
+ background-color: #f1f1f1;
+}
+
+.women-topNav a {
+  background-color: #00000000;
+  color: #000000;
+  font-size: larger;
+  // font-weight: bolder;
+}
+
+.top-nav-shoes:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-clothing:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-sale:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-trousers-and-leggings:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-daily-wear:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.top-section {
+  width: 90vw;
+  // height: 30vh;
+}
+.theme-image {
+  // width: 100%;
+  // height: 100%;
+}
+
+.table-container {
+  // width: 100vw;
+  // height: 10vh;
+}
+.theme-image img {
+  width: 100vh;
+  // height: auto;
+}
+.links-table {
+  width: 20vh;
+  height: 60vh;
+  //border-collapse: collapse;
+  // line-height: 0;
+}
+
+.links-table td, a {
+  font-size: medium;
+  font-weight: normal;
+  color: black;
+  // height: 2em;
+  // border: 1px solid black;
+  // padding-right: 20%;
+  // line-height: 0;
+}
+.links-table th {
+  font-weight: normal;
+  font-size: large;
+}
+
+a:hover {
+  color: #FF3386;
+}
+@media screen and (max-width: 900px) {
+
+  .dresses-container {
+    padding-left: 1%;
+    padding-right: 1%;
+    // flex-direction: row;
+  }
+  .card {
+    // flex-basis: fit-content;
+    flex-direction: column;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .products {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+  }
+
+  .p-10 { padding: 10px }
+
+  .carousel-image {
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    height: 100px;
+  }
+}
+.dresses-container {
+  width: 300%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  // padding: 50px 0;
+}
+
+.dresses {
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card {
+  border: 0px solid white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 25px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+hr {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__prev-button {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-color:white;
+  max-height: 500px;
+  display: inline-block;
+}
+
+.carousel__next-button {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-color:white;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  .product-title-price {
+    display: flex;
+    justify-content: space-between
+  }
+}

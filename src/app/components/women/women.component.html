@@ -1,0 +1,157 @@
+<div class="container">
+  <div [class.sticky]="sticky" #stickyNavigator>
+    <mat-toolbar class="women-toolbar" >
+      <div class="women-topNav" fxFlex fxLayout="row" fxLayoutAlign="center center" >
+            <div class="top-nav-shoes">
+              <a class="nav-link"  routerLink="/shoes" routerLinkActive="router-link-active">Shoes</a>
+            </div>
+            <div class="top-nav-clothing" >
+              <a class="nav-link"  routerLink="/clothing" routerLinkActive="router-link-active">Clothing</a>
+            </div>
+            <div class="top-nav-sale">
+              <a class="nav-link"  routerLink="/sale" routerLinkActive="router-link-active">Sale</a>
+            </div>
+            <div class="top-nav-trousers-and-leggings">
+              <a class="nav-link"  routerLink="/trousers-and-leggings" routerLinkActive="router-link-active">Trousers and Leggings</a>
+            </div>
+            <div class="top-nav-daily-wear">
+              <a class="nav-link"  routerLink="/daily-wear" routerLinkActive="router-link-active">Daily Wear</a>
+            </div>
+      </div>
+    </mat-toolbar>
+  </div>
+
+  <div >
+    <div fxFlex=""></div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="center" class="top-section">
+      <span>
+        <div class="table-container">
+          <table mat-table [dataSource]="dataSource"  class="links-table">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Top Categories </th>
+              <td mat-cell *matCellDef="let element"> <a class="nav-link" routerLink="/women/{{element.name.replace(' ', '-').toLowerCase( )}}" routerLinkActive="router-link-active"> {{element.name}} </a></td>
+              <!--
+              <td mat-cell *matCellDef="let element"> <a class="nav-link" routerLink="/women/{{element.name.toLowerCase( )}}" routerLinkActive="router-link-active"> {{element.name}} </a></td>
+              -->
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </div>
+      </span>
+      <span>
+        <div class="theme-image">
+          <img src="assets/merchandise/shoes/women/womens-shoes-clothing-accessories.jpg" alt="An image from nike"  >
+        </div>
+      </span>
+    </div>
+    <div fxFlex  fxLayoutAlign="flex-end center">
+      <span></span>
+    </div>
+  </div>
+
+  <br>
+
+  <div>
+    <h1><a class="nav-link"  routerLink="/trousers-and-leggings" routerLinkActive="router-link-active">Dresses</a></h1>
+  </div>
+  <div class="dresses-container">
+    <div class="dresses">
+      <div class="card">
+        <div class="body">
+          <button mat-icon-button class="carousel__prev-button" (click)="previous(first, second, third, 'Dresses')">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <div><img class="carousel-image"  src="{{dresses[first].image}}" alt="Description"></div>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[second].name}}</div>
+            <div >{{dresses[second].price}}</div>
+          </div>
+          <div>{{dresses[first].description}}</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <div><img class="carousel-image" src="{{dresses[second].image}}" alt="Description"></div>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[second].name}}</div>
+            <div >{{dresses[second].price}}</div>
+          </div>
+
+          <div>{{dresses[second].description}}</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <div><img class="carousel-image"  src="{{dresses[third].image}}" alt="Description"></div>
+          <button mat-icon-button class="carousel__next-button" (click)="nextImage(first, second, third, 'Dresses')">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[second].name}}</div>
+            <div >{{dresses[second].price}}</div>
+          </div>
+          <div>{{dresses[third].description}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1><a class="nav-link"  routerLink="/trousers-and-leggings" routerLinkActive="router-link-active">Shoes</a></h1>
+  </div>
+  <div class="dresses-container">
+    <div class="dresses">
+      <div class="card">
+        <div class="body">
+          <button mat-icon-button class="carousel__prev-button" (click)="previous(firstDress, secondDress, thirdDress, 'Shoes')">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <div><img class="carousel-image"  src="{{dresses[firstDress].image}}" alt="Description"></div>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[secondDress].name}}</div>
+            <div >{{dresses[secondDress].price}}</div>
+          </div>
+          <div>{{dresses[firstDress].description}}</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <div><img class="carousel-image"  src="{{dresses[secondDress].image}}" alt="Description"></div>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[secondDress].name}}</div>
+            <div >{{dresses[secondDress].price}}</div>
+          </div>
+          <div>{{dresses[secondDress].description}}</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="body">
+          <div><img class="carousel-image"  src="{{dresses[thirdDress].image}}" alt="Description"></div>
+          <button mat-icon-button class="carousel__next-button" (click)="nextImage(firstDress, secondDress, thirdDress, 'Shoes')">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+        <div class="footer">
+          <div class="product-title-price">
+            <div >{{dresses[thirdDress].name}}</div>
+            <div >{{dresses[thirdDress].price}}</div>
+          </div>
+          <div>{{dresses[thirdDress].description}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

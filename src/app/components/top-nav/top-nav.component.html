@@ -1,0 +1,268 @@
+<mat-toolbar class="main-toolbar">
+
+  <mat-toolbar-row id="toolbar">
+    <div fxFlex="" class="nav-link">
+      <a  routerLink="/" routerLinkActive="router-link-active">My App</a>
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+      <span class="for-new-category">
+          <button mat-button class="new-category-button" [routerLink]="['new-releases']">New Releases</button>
+          <div class="new-category-dropdown">
+            <div class="sub-category-elements" fxLayoutAlign="column">
+              <div class="inner-category">
+                <a class="nav-link" routerLink="/featured" routerLinkActive="router-link-active">Featured</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>New For Men</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a href="#"class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+
+              <div class="inner-category">
+                <a>New For Women</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>New For Kids</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>Shop By Category</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <span class="for-men">
+          <button mat-button class="men-button" [routerLink]="['men']">Men</button>
+          <div class="men-dropdown">
+            <div class="sub-men-elements" fxLayoutAlign="column">
+              <div class="inner-category">
+                <ul>
+                  <a>Featured</a>
+                  <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                  <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                  <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+                </ul>
+              </div>
+              <div class="inner-category">
+                <a>Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+
+              <div class="inner-category">
+                <a>Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>Formal Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>Shop By Category</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </span>
+        <span class="for-women">
+          <button mat-button class="women-button" [routerLink]="['women']">Women</button>
+          <div class="women-dropdown">
+            <div class="sub-men-elements" fxLayoutAlign="column">
+              <div class="inner-category">
+                <a>Featured</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">New Releases</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Bestsellers</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Member Access</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">On Your radar</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Clobber Hub Special</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Gift Card</a>
+              </div>
+              <div class="inner-category">
+                <a>Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Dresses</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Suits</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Jackets</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">T-Shirts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Shorts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Skirts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Daily Wear</a>
+              </div>
+
+              <div class="inner-category">
+                <a>Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">View All</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Sandals</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Slops</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Boots</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Heels</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Pumps</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Sneakers</a>
+              </div>
+              <div class="inner-category">
+                <a>Accessories</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">View All</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Jewellery</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Bangs And Purses</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Scarves</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Hair Accessories</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Reading Glasses</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Belts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Hats</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Face Masks</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Fragrances</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Gifts</a>
+              </div>
+              <div class="inner-category">
+                <a>Shop By Trends</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">View All</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Cozy Wear</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Retro</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Pastels</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Color Blocking</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Neon</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Prints</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Fit of the week</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Clobber Hub Essentials</a>
+              </div>
+            </div>
+          </div>
+        </span>
+      <span class="for-kids">
+          <button mat-button class="kids-button" [routerLink]="['kids']">Kids</button>
+          <div class="kids-dropdown">
+            <div class="sub-men-elements" fxLayoutAlign="column">
+              <div class="inner-category">
+                <a>Featured</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Kids</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Sale</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">New releases</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Bestsellers</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Cosy at Home</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Teen Girl Picks</a>
+              </div>
+              <div class="inner-category">
+                <a>Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Sport Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Baby and Toddler</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Young Kids 1.9 - 9.5</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Younger Kids 10 - 2.5</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Older Kids 3 - 6</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Lifestyle</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Football</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Running</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Basketball</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Sandals and Slides</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Extended Sizes</a>
+              </div>
+
+              <div class="inner-category">
+                <a>Boy's Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Boys Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Boy 6 -14</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Boy 5 Months</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Boy Mini 0 - 12 Months</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Hoodies and Sweatshirts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Tracksuits</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Jackets and Gilets</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Tops and T-Shorts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Shorts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Socks</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Fleece</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Extended Sizes</a>
+              </div>
+              <div class="inner-category">
+                <a>Girls' Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Girls Clothing</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Girl 6 -14</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Girl 5 Months</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Girl Mini 0 - 12 Months</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Bras and leggings</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Hoodies and Sweatshirts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Trousers and Tights</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Tracksuits</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Jackets and Gilets</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Tops and T-Shorts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Shorts</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Socks</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Fleece</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Extended Sizes</a>
+              </div>
+              <div class="inner-category">
+                <a>Baby and Toddler</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">All Baby Clothes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Baby Sets</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Baby Boy</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Baby Girl</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Baby All Baby Shoes</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Pyjamas Capsule</a>
+              </div>
+              <div class="inner-category">
+                <a>Shop By Trends</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+              <div class="inner-category">
+                <a>Accessories And Equipment</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 1</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 2</a>
+                <a class="nav-link" routerLink="/testing" routerLinkActive="router-link-active">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </span>
+    </div>
+    <div fxFlex  fxLayoutAlign="flex-end center" class="nav-link-end">
+    <a>
+      <button mat-icon-button (click)="openSearch()">
+        <mat-icon class="accessories">search</mat-icon>
+      </button>
+    </a>
+    <a>
+      <button mat-icon-button>
+        <mat-icon class="accessories">favorite_border</mat-icon>
+      </button>
+    </a>
+    <a>
+      <button mat-icon-button>
+        <mat-icon class="accessories">shopping_cart</mat-icon>
+      </button>
+    </a>
+    </div>
+  </mat-toolbar-row>
+
+
+  <mat-toolbar-row class="search-block mat-elevation-z4" *ngIf="toggleSearch">
+    <mat-toolbar-row style="padding: 0 5px;">
+      <button class="search-icon" mat-icon-button disabled>
+        <mat-icon>search</mat-icon>
+      </button>
+      <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
+      <button mat-button mat-icon-button (click)="searchClose()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
+

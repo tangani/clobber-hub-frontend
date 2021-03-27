@@ -1,0 +1,24 @@
+.mobile-container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.annotations {
+  background-color: black;
+  flex-direction: row;
+}
+.side-nav-bar {
+  width: 65%;
+  height: 100%;
+  position: fixed;
+}
+#upper a {
+  color: black;
+}
+.nav-link-end {
+  margin-right: 15%;
+}
+.nav-link {
+  margin-left: 15%;
+}

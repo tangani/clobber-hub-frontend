@@ -1,0 +1,119 @@
+<div class="container">
+
+  <br>
+
+  <div class="top-image">
+    <img src="{{topImages[2].image}}" alt="Top image with text overlay will be here">
+    <div class="mid-left">
+      <p>IMPRESS YOURSELF with a </p>
+      <p>BEAUTY Refresh</p>
+    </div>
+    <div class="top-left">REFRESH YOURSELF</div>
+  </div>
+
+  <br>
+
+  <div class="categories">
+    <div class="category-in-images">
+      <div class="category-body">
+        <button mat-icon-button class="carousel__prev-button" (click)="previousImage(topSellersOne, topSellersTwo, topSellersThree, 'categories')">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <div class="category-carousel-image">
+          <img src="{{dresses[topSellersOne].image}}" alt="Description">
+          <div class="lower-center-text">{{dresses[topSellersOne].category}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="category-in-images">
+      <div class="category-body">
+        <div class="category-carousel-image">
+          <img src="{{dresses[topSellersTwo].image}}" alt="Description">
+          <div class="lower-center-text">{{dresses[topSellersTwo].category}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="category-in-images">
+      <div class="category-body">
+        <div class="category-carousel-image">
+          <img src="{{dresses[topSellersThree].image}}" alt="Description">
+          <div class="lower-center-text">{{dresses[topSellersThree].category}}</div>
+        </div>
+        <button mat-icon-button class="carousel__next-button" (click)="nextImage(topSellersOne, topSellersTwo, topSellersThree, 'categories')">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="optional-views">
+    <div [class.first]="first">
+      <a  (click)="swapText('sectionOne')">{{sectionOne}}</a>
+      <!--
+      <button mat-button (click)="swapText('sectionOne')">{{sectionOne}}</button>
+      -->
+    </div>
+    <div [class.second]="second">
+      <a  (click)="swapText('sectionTwo')">{{sectionTwo}}</a>
+      <!--
+      <button mat-button (click)="swapText('sectionTwo')">{{sectionTwo}}</button>
+      -->
+    </div>
+    <div [class.third]="third">
+      <a  (click)="swapText('sectionThree')">{{sectionThree}}</a>
+      <!--
+      <button mat-button (click)="swapText('sectionThree')">{{sectionThree}}</button>
+      -->
+    </div>
+  </div>
+
+  <br>
+
+  <div class="top-section-choice">
+    <div class="card">
+      <div class="body">
+        <button mat-icon-button class="carousel__prev-button" (click)="previousImage(topSectionOne, topSectionTwo, topSectionThree, 'choice-carousel')">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <div><img class="carousel-image"  src="{{dataSource[topSectionOne].image}}" alt="Description"></div>
+      </div>
+      <div class="card-footer">
+        <div class="product-title-price">
+          <div >{{dataSource[topSectionOne].name}}</div>
+          <div >{{dataSource[topSectionOne].price}}</div>
+        </div>
+        <div>{{dataSource[topSectionOne].description}}</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <div><img class="carousel-image"  src="{{dataSource[topSectionTwo].image}}" alt="Description"></div>
+      </div>
+      <div class="card-footer">
+        <div class="product-title-price">
+          <div >{{dataSource[topSectionTwo].name}}</div>
+          <div >{{dataSource[topSectionTwo].price}}</div>
+        </div>
+        <div>{{dataSource[topSectionTwo].description}}</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <button mat-icon-button class="carousel__next-button" (click)="nextImage(topSectionOne, topSectionTwo, topSectionThree, 'choice-carousel')">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+        <div><img class="carousel-image"  src="{{dataSource[topSectionThree].image}}" alt="Description"></div>
+      </div>
+      <div class="card-footer">
+        <div class="product-title-price">
+          <div >{{dataSource[topSectionThree].name}}</div>
+          <div >{{dataSource[topSectionThree].price}}</div>
+        </div>
+        <div>{{dataSource[topSectionThree].description}}</div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <h1>This is for space</h1>
+</div>

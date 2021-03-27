@@ -1,0 +1,11 @@
+<div [@searchExpand]="expanded" fxFlex class="search__container" >
+  <input (blur)="onBlur()" [@inputExpand]="expanded" class=" search__input" #myInput placeholder="Search" type="text" matInput [matAutocomplete]="autocomplete" [(ngModel)]="_value">
+  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" >
+  </mat-autocomplete>
+  <button *ngIf="expanded" [@clearExpand]="{value: _value.length > 0 && expanded, params: {finalOpacity: _value.length > 0 ? 1 : 0}}" mat-icon-button (click)="close()">
+    <mat-icon (click)="close(); myInput.focus()">close</mat-icon>
+  </button>
+  <button disableRipple="true" mat-icon-button (click)="onSearchClicked(); myInput.focus()">
+    <mat-icon>search</mat-icon>
+  </button>
+</div>

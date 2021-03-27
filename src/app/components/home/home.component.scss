@@ -1,0 +1,292 @@
+.top-image {
+  position: relative;
+  text-align: center;
+  // color: white;
+}
+.top-image img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: scale-down;
+}
+.mid-left {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  transform: translate(0%, -45%);
+  // color: #f1f1f1;
+  color: blue;
+  font-size: 2em;
+  font-weight: bold;
+  background-size: 0.2em;
+  // background-color: #FF3386;
+  padding: 0.125em;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // color: #f1f1f1;
+  color: aqua;
+  font-size: 2em;
+  font-weight: bold;
+}
+.top-left {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  font-weight: bolder;
+  font-size: 3em;
+  color: red;
+  background-color: blanchedalmond;
+  background-size: auto;
+  padding: 0.5em;
+}
+
+.top-sellers a{
+  color: #303331;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.button-link:hover a {
+  background-color: #303331;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: medium;
+}
+.button-link a{
+  border: #303331;
+  font-size: medium;
+  font-weight: normal;
+}
+
+
+// CATEGORY IMAGES WITH THEIR CAROUSEL START HERE
+.categories {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: space-between;
+}
+.category-in-images {
+  width: 30%;
+  max-height: 30vh;
+  min-height: 30vh;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.category-in-images img{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  position: inherit;
+  object-position: center;
+  max-height: 30vh;
+  min-height: 30vh;
+}
+.category-body {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.category-carousel-image:hover img{
+  opacity: 0.5;
+}
+
+.category-carousel-image:hover {
+  .lower-center-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:hsla(0, 100%, 100%, 0.75);
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+}
+.lower-center-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 75%);
+  width: 90%;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: black;
+  background-color: #f1f1f1;
+  background-size: auto;
+  padding: 0.5em;
+}
+
+// CAROUSEL BEGINS HERE
+
+.card img {
+  width: 100%;
+  max-height: 30vh;
+  min-height: 30vh;
+  object-fit: initial;
+  position: inherit;
+}
+
+.carousel-item {
+  &.active, &.carousel-item-right, &.carousel-item-next {
+    display: flex !important;
+    flex-wrap: wrap
+  }
+}
+
+.card {
+  border: 0px solid white;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+hr  {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  .product-title-price {
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+
+
+.carousel__prev-button {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-color:white;
+}
+
+.carousel__next-button {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-color:white;
+}
+
+.carousel-image {
+  width: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  height: 500px;
+}
+
+.optional-views {
+  text-align: center;
+  // width: 100%;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+.optional-views a {
+  display: inline-block;
+  width: 100%;
+  // padding: 1%;
+  padding-top: 3em;
+  margin-right: 2em;
+  cursor: pointer;
+}
+.optional-views:hover a{
+  text-decoration: none;
+}
+.first {
+  color: black;
+  font-size: 1.25em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+}
+.second {
+  color: black;
+  font-size: 1.25em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+}
+.third {
+  color: black;
+  font-size: 1.25em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+}
+
+.top-section-choice {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+
+  .product-container {
+    padding-left: 1%;
+    padding-right: 1%;
+    // flex-direction: row;
+  }
+  .card {
+    flex-direction: column;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .products {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+  }
+
+  .p-10 { padding: 10px }
+
+  .carousel-image {
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    height: 100px;
+  }
+}

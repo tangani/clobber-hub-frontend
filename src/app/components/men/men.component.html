@@ -1,0 +1,37 @@
+<div [class.sticky]="sticky" #stickyNavigator>
+  <mat-toolbar class="men-toolbar" >
+    <div fxFlex>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div class="men-topNav" fxFlex fxLayout="row" fxLayoutAlign="center center">
+      <div class="top-nav-shoes">
+        <a class="nav-link"  routerLink="/shoes" routerLinkActive="router-link-active">Shoes</a>
+      </div>
+      <div class="top-nav-clothing" >
+        <a class="nav-link"  routerLink="/clothing" routerLinkActive="router-link-active">Clothing</a>
+      </div>
+      <div class="top-nav-sale">
+        <a class="nav-link"  routerLink="/sale" routerLinkActive="router-link-active">Sale</a>
+      </div>
+      <div class="top-nav-trousers-and-leggings">
+        <a class="nav-link"  routerLink="/trousers-and-leggings" routerLinkActive="router-link-active">Trousers and Leggings</a>
+      </div>
+      <div class="top-nav-daily-wear">
+        <a class="nav-link"  routerLink="/daily-wear" routerLinkActive="router-link-active">Daily Wear</a>
+      </div>
+    </div>
+    <div fxFlex  fxLayoutAlign="flex-end center">
+      <span></span>
+    </div>
+  </mat-toolbar>
+</div>
+<div class="men-main-image">
+  <img src="assets/merchandise/shoes/men/nike-just-do-it.jpg" alt="An image from nike">
+</div>
+<br>
+<div>
+  <h1>Trending This Week</h1>
+
+</div>

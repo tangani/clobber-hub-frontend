@@ -1,0 +1,55 @@
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+}
+
+.men-toolbar {
+  background-color: #ffffff;
+}
+
+.men-topNav a {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.top-nav-shoes:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-clothing:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-sale:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-trousers-and-leggings:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.top-nav-daily-wear:hover a {
+  background-color: #ffffff;
+  color: #FF3386 ;
+  font-size: medium;
+  font-weight: normal;
+}
+.men-main-image {
+  width: 100%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 2%;
+}

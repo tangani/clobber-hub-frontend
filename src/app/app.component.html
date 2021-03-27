@@ -1,0 +1,66 @@
+<div *ngIf="!getIfMobile">
+  <!--  (backdropClick)="close('backdrop')" -->
+  <mat-sidenav-container (backdropClick)="close('backdrop')">
+
+    <mat-sidenav class="sign-in" #singIn (keydown.escape)="close('escape')">
+      <p><button mat-button (click)="close('toggle button')">Sign IN</button></p>
+      <p>My Account</p>
+      <app-sign-in></app-sign-in>
+    </mat-sidenav>
+
+    <mat-sidenav #joins (keydown.escape)="closeJoinUs('backdrop')" position="start">
+      <p><a mat-button (click)="closeJoinUs('toggle button')">Join US</a></p>
+      <p>My Account</p>
+      <app-join-us></app-join-us>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+      <mat-toolbar-row id="upper">
+        <div fxFlex="" class="nav-link">
+          <a  routerLink="/" routerLinkActive="router-link-active">My App Upper</a>
+        </div>
+
+        <div fxFlex="" fxLayoutAlign="end center"  class="nav-link-end">
+          <mat-sidenav-container   (backdropClick)="close('backdrop')">
+            <mat-sidenav-content class="sidenav-container">
+              <a routerLink="/#" routerLinkActive="router-link-active"><button mat-button>Help</button></a>
+              <a (click)="joins.open()"><button mat-button>Join Us</button></a>
+              <a (click)="singIn.open()"><button mat-button>Sign in</button></a>
+            </mat-sidenav-content>
+          </mat-sidenav-container>
+        </div>
+      </mat-toolbar-row>
+
+      <app-top-nav></app-top-nav>
+      <router-outlet ></router-outlet>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<div class="for-mobile" *ngIf="getIfMobile">
+
+  <mat-sidenav-container class="mobile-container" *ngIf="shouldRun">
+    <mat-sidenav class="side-nav-bar" #sidenav position="end">
+      <div class="mt-3">
+        <app-side-nav></app-side-nav>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="annotations" fxLayoutAlign="space-between center" color="primary">
+        <p>Logo</p>
+        <p>
+          <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </p>
+      </mat-toolbar>
+
+        <router-outlet></router-outlet>
+      <app-footer></app-footer>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
